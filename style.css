@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  background-color: grey;
+}
+img {
+  width: 100px;
+}
+table{
+  background-color: grey;
+  background-position: center;
+  top: 30px;
+
+}
+.mainDiv {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: grey;
+  background-position: center;
+  width: 75%;
+  height: 500px;
+}
+.red {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+.orange {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  position: absolute;
+  left: 400px;
+  top:0;
+}
+.yellow {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  position: absolute;
+  left: 200px;
+  top:0;
+}
+.butn {
+  background: #28abb9;
+  position: absolute;
+  font-family:monospace,fantasy;
+  border-radius: 3px;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: block;
+}
+.containerD {
+  position: relative;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+img:hover{
+  background-color: #ecf4f3;
+  background-image: disapper;
+}
+.active {
+  background-color: #006a71;
+}
+.img1
+{
+}
+.img2
+{
+
+}
+.img3
+{
+
+}
+.img4
+{
+
+}
+.img5
+{
+
+}
+.img6
+{
+
+}
+.img7
+{
+
+}
+.img8
+{
+
+}
+.img9
+{
+
+}

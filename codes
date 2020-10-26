@@ -1,0 +1,223 @@
+
+
+
+
+
+
+
+function rollingShowImg()
+{
+  var randomNumber1 = Math.floor(Math.random()* 8)+ 1;
+  var randomNumber2 = Math.floor(Math.random()* 8)+ 1;
+  var randomNumber3 = Math.floor(Math.random()* 8)+ 1;
+  var randomNumber4 = Math.floor(Math.random()* 8)+ 1;
+  var randomNumber5 = Math.floor(Math.random()* 8)+ 1;
+  var randomNumber6 = Math.floor(Math.random()* 8)+ 1;
+  var randomNumber7 = Math.floor(Math.random()* 8)+ 1;
+  var randomNumber8 = Math.floor(Math.random()* 8)+ 1;
+  var randomNumber9 = Math.floor(Math.random()* 8)+ 1;
+
+      document.querySelector(".img1").setAttribute("src" + randomNumber1 + ".png");
+      document.querySelector(".img2").setAttribute("src" + randomNumber2 + ".png");
+      document.querySelector(".img3").setAttribute("src" + randomNumber1 + ".png");
+      document.querySelector(".img4").setAttribute("src" + randomNumber2 + ".png");
+      document.querySelector(".img5").setAttribute("src" + randomNumber1 + ".png");
+      document.querySelector(".img6").setAttribute("src" + randomNumber2 + ".png");
+      document.querySelector(".img7").setAttribute("src" + randomNumber1 + ".png");
+      document.querySelector(".img8").setAttribute("src" + randomNumber2 + ".png");
+      document.querySelector(".img9").setAttribute("src" + randomNumber2 + ".png");
+
+}
+function rollingHideImg()
+{
+  var randomNumber1 = Math.floor(Math.random()* 8)+ 1;
+  var randomNumber2 = Math.floor(Math.random()* 8)+ 1;
+  var randomNumber3 = Math.floor(Math.random()* 8)+ 1;
+  var randomNumber4 = Math.floor(Math.random()* 8)+ 1;
+  var randomNumber5 = Math.floor(Math.random()* 8)+ 1;
+  var randomNumber6 = Math.floor(Math.random()* 8)+ 1;
+  var randomNumber7 = Math.floor(Math.random()* 8)+ 1;
+  var randomNumber8 = Math.floor(Math.random()* 8)+ 1;
+  var randomNumber9 = Math.floor(Math.random()* 8)+ 1;
+
+      document.querySelector(".img1").setAttribute("src" + randomNumber1 + ".png").classList("invisible");
+      document.querySelector(".img2").setAttribute("src" + randomNumber2 + ".png").classList("invisible");
+      document.querySelector(".img3").setAttribute("src" + randomNumber1 + ".png").classList("invisible");
+      document.querySelector(".img4").setAttribute("src" + randomNumber2 + ".png").classList("invisible");
+      document.querySelector(".img5").setAttribute("src" + randomNumber1 + ".png").classList("invisible");
+      document.querySelector(".img6").setAttribute("src" + randomNumber2 + ".png").classList("invisible");
+      document.querySelector(".img7").setAttribute("src" + randomNumber1 + ".png").classList("invisible");
+      document.querySelector(".img8").setAttribute("src" + randomNumber2 + ".png").classList("invisible");
+      document.querySelector(".img9").setAttribute("src" + randomNumber2 + ".png").classList("invisible");
+
+    document.querySelector("img").classList("invisible");
+
+}
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title> Mid Exam </title>
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body>
+  <div class="mainDiv">
+    <center>
+      <div class="containerD">
+    <table>
+    <tr>
+      <td>
+        <div class=""><img class="img1" src="1.png" >
+          <div class="center">1</div>
+    </td>
+      <td><div class=""><img class="img2" src="2.png" >
+      <div class="center">2</div></div></td>
+      <td><div class=""><img class="img3" src="3.png" >
+      <div class="center">3</div></td>
+    </tr>
+    <tr>
+      <td><div class=""><img class="img4" src="4.png" >
+      <div class="center">4</div></td>
+      <td><div class=""><img class="img5" src="5.png" >
+      <div class="center">5</div></div></td>
+      <td><div class=""><img class="img6" src="6.png" >
+      <div class="center">6</div></td>
+    </tr>
+    <tr>
+      <td><div class=""><img class="img7" src="7.png" >
+      <div class="center">7</div></td>
+      <td><div class=""><img class="img8" src="8.png" >
+      <div class="center">8</div></div></td>
+      <td><div class=""><img class="img9" src="9.png" >
+      <div class="center">9</div></td>
+    </tr>
+    <tr>
+      <td><button class="butn" type="button" onClick="rollingImg()"> Run :) </button></td>
+      <td></td>
+      <td><button class="butn" type="button" onClick="rollingImg()"> Run :) </button></td>
+    </tr>
+  </table>
+  </div>
+</center>
+  </div>
+
+    <script type="text/javascript" src="code.js"></script>
+  </body>
+</html>
+
+
+body {
+  margin: 0;
+  background-color: grey;
+}
+img {
+  width: 100px;
+}
+table{
+  background-color: grey;
+  background-position: center;
+  top: 30px;
+
+}
+.mainDiv {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: grey;
+  background-position: center;
+  width: 75%;
+  height: 500px;
+}
+.red {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+.orange {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  position: absolute;
+  left: 400px;
+  top:0;
+}
+.yellow {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  position: absolute;
+  left: 200px;
+  top:0;
+}
+.butn {
+  background: #28abb9;
+  position: absolute;
+  font-family:monospace,fantasy;
+  border-radius: 3px;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  display: block;
+}
+.containerD {
+  position: relative;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+img:hover{
+  background-color: #ecf4f3;
+  background-image: disapper;
+}
+.active {
+  background-color: #006a71;
+}
+.img1
+{
+}
+.img2
+{
+
+}
+.img3
+{
+
+}
+.img4
+{
+
+}
+.img5
+{
+
+}
+.img6
+{
+
+}
+.img7
+{
+
+}
+.img8
+{
+
+}
+.img9
+{
+
+}
+
+
+
